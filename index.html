@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>BankApp</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo-img"src="assets/img/logo.png" alt="logo image">
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="assets/sprite.svg#icon-messages"></use>
+            </svg>
+            <span class="user-nav__notification">8</span>
+          </div>
+          <div class="user-nav__user">
+            <img class="user-nav__user-photo"src="assets/img/hannah.jpg" alt="user img">
+            <span class="user-nav__user-name">Anna</span>
+          </div>
+          <div>
+             <ion-icon class="user-nav__log-out" name="log-out-outline"></ion-icon>
+          </div>
+ 
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#"  class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Main</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="./pages/transactions.html"  class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/sprite.svg#icon-tab"></use>
+                </svg>
+                <span>Transactions</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#"  class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/sprite.svg#icon-coin-dollar"></use>
+                </svg>
+                <span>Deposits</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main class="dashboard">
+          <div class="account-summary">
+            <div class="account-summary__box">
+              <p class="account-summary__type">Income</p>
+              <p class="account-summary__amount">$3,814.25</p>
+            </div>
+            <div class="account-summary__box">
+              <p class="account-summary__type">Expenses</p>
+              <p class="account-summary__amount">$1,700.36</p>
+            </div>
+            <div class="account-summary__box">
+              <p class="account-summary__type">Deposit</p>
+              <p class="account-summary__amount">$3,000.25</p>
+            </div>
+          </div>
+          <div class="balance-expenses-currency-conatiner">
+            <div>
+              <div class="current-balance">
+                <h3 class="current-balance__label">Current Balance</h3>
+                <div class="current-balance__total">
+                  <div class="current-balance__container current-balance__container-total">
+                      <img class="current-balance__icon" src="assets/icons/dollar-sign.svg" alt="dollar icon">
+                      <div>
+                        <p>Total</p>
+                        <p class="current-balance__total--value">$2,100.25</p>
+                      </div>
+                  </div>
+                  <div class="current-balance__container">
+                    <div class="current-balance__currency-box">
+                      <div class="current-balance__currency-1">
+                        <p class="current-balance__currency">Dollar</p>
+                        <p class="current-balance__value">850$</p>
+                      </div>
+                      <div class="current-balance__currency-2">
+                        <p class="current-balance__currency">Euro</p>
+                        <p class="current-balance__value">500€</p>
+                      </div>
+                    </div>
+                    <div class="current-balance__currency-box">
+                      <div class="current-balance__currency-3">
+                        <p class="current-balance__currency">Pound</p>
+                        <p class="current-balance__value">300£</p>
+                      </div>
+                      <div class="current-balance__currency-4">
+                        <p class="current-balance__currency">Lari</p>
+                        <p class="current-balance__value">500₾ </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="current-expenses">
+                <div class="expenses__container">
+                  <div class="expenses__container__pie"></div>
+                  <div>
+                    <h3 class="expenses__container__label">Current Expenses</h3>
+                    <div class="current-balance__container">
+                    <div class="current-balance__currency-box">
+                      <div class="current-balance__currency-1">
+                        <p class="current-balance__currency">Bills</p>
+                        <p class="current-balance__value">850$</p>
+                      </div>
+                      <div class="current-balance__currency-2">
+                        <p class="current-balance__currency">Living</p>
+                        <p class="current-balance__value">500€</p>
+                      </div>
+                    </div>
+                    <div class="current-balance__currency-box">
+                      <div class="current-balance__currency-3">
+                        <p class="current-balance__currency">Entertainment</p>
+                        <p class="current-balance__value">300£</p>
+                      </div>
+                      <div class="current-balance__currency-4">
+                        <p class="current-balance__currency">Personal Care</p>
+                        <p class="current-balance__value">500₾ </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="currency-rate">
+              <div class="flex-box">
+                <div class="currency-rate__content--1">
+                  <div class="currency-rate__container">
+                    <img src="assets/img/USA flag.png" alt="USA flag">
+                    <div>
+                      <p class="currency-rate__label"><span class="currency-rate__country">usd</span>official rate</p>
+                      <p class="currency-rate__value">2.7174</p>
+                    </div>
+                  </div>
+                  <div class="currency-rate__details">
+                    <div class="currency-rate__type">
+                      <p>special course</p>
+                      <p>standart</p>
+                    </div>
+                    <div class="currency-rate__deal__type">
+                      <div class="currency-rate__values--purchase">
+                        <p class="currency-rate__deal__type--label">purchase</p>
+                        <p class="currency-rate__deal__type--value">2.7110</p>
+                        <p class="currency-rate__deal__type--value">2.6660</p>
+                      </div>
+                      <div class="currency-rate__values--sell">
+                        <p class="currency-rate__deal__type--label">sell</p>
+                        <p class="currency-rate__deal__type--value">2.7160</p>
+                        <p class="currency-rate__deal__type--value">2.7660</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-box">
+                <div class="currency-rate__content--1">
+                  <div class="currency-rate__container">
+                    <img src="assets/img/european Union flag.webp" alt="European Union flag">
+                    <div>
+                      <p class="currency-rate__label"><span class="currency-rate__country">EUR</span>official rate</p>
+                      <p class="currency-rate__value">2.9874</p>
+                    </div>
+                  </div>
+                  <div class="currency-rate__details">
+                    <div class="currency-rate__type">
+                      <p>special course</p>
+                      <p>standart</p>
+                    </div>
+                    <div class="currency-rate__deal__type">
+                      <div class="currency-rate__values--purchase">
+                        <p class="currency-rate__deal__type--label">purchase</p>
+                        <p class="currency-rate__deal__type--value">2.7110</p>
+                        <p class="currency-rate__deal__type--value">2.6660</p>
+                      </div>
+                      <div class="currency-rate__values--sell">
+                        <p class="currency-rate__deal__type--label">sell</p>
+                        <p class="currency-rate__deal__type--value">2.7160</p>
+                        <p class="currency-rate__deal__type--value">2.7660</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-box">
+                <div class="currency-rate__content--1">
+                  <div class="currency-rate__container">
+                    <img src="assets/img/UK flag.jpg" alt="UK flag">
+                    <div>
+                      <p class="currency-rate__label"><span class="currency-rate__country">GBP</span>official rate</p>
+                      <p class="currency-rate__value">3.7174</p>
+                    </div>
+                  </div>
+                  <div class="currency-rate__details">
+                    <div class="currency-rate__type">
+                      <p>special course</p>
+                      <p>standart</p>
+                    </div>
+                    <div class="currency-rate__deal__type">
+                      <div class="currency-rate__values--purchase">
+                        <p class="currency-rate__deal__type--label">purchase</p>
+                        <p class="currency-rate__deal__type--value">2.7110</p>
+                        <p class="currency-rate__deal__type--value">2.6660</p>
+                      </div>
+                      <div class="currency-rate__values--sell">
+                        <p class="currency-rate__deal__type--label">sell</p>
+                        <p class="currency-rate__deal__type--value">2.7160</p>
+                        <p class="currency-rate__deal__type--value">2.7660</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+
+
+
+        
+
+        </main>
+      </div>
+
+    </div>
+    <footer></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

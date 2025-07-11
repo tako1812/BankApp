@@ -1,0 +1,89 @@
+.transactions__container {
+  max-width: 60rem;
+  margin: 4rem auto;
+  
+  .balance {
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  
+    &__label{
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: -0.2rem;
+  
+    }
+    &__date{
+      font-size: 1.4rem;
+    
+    }
+    &__value{
+      font-size: 4.5rem;
+      font-weight: 400;
+  
+    }
+  }
+
+  .movements {
+    grid-row: 2 / span 3;
+    background-color:var(--color-white);
+    border-radius: 1rem;
+
+    &__row{
+      padding: 2.25rem 4rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    &__type{
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 10rem;
+      margin-right: 2rem
+    }
+    
+    &__value{
+      font-size: 1.7rem;
+     
+      margin-left: auto;
+    }
+    &__icon{
+      background-color:var(--color-white);
+      width:2rem;
+      height:2rem;
+
+      &--1{
+      fill: var(--color-cyan);
+      }
+      &--2{
+        fill: var(--color-green);
+      }
+      &--3{
+        fill: var(--color-red);
+      }
+      &--4{
+        fill: var(--color-purple);
+      }
+      &--5{
+        fill: var(--color-turquoise);
+      }
+    }
+    &__box-1{
+    display:flex;
+    align-items:center;
+    gap: .5rem;
+    }
+    &__box-2{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    }
+  }
+}
+.transaction__date--box{
+  margin: 2.5rem 0 .3rem;
+}
+

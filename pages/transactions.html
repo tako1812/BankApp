@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../transactions.css" />
+    <title>BankApp</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../index.html"><img class="logo-img"src="../assets/img/logo.png" alt="logo image"></a>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="../assets/sprite.svg#icon-messages"></use>
+            </svg>
+            <span class="user-nav__notification">8</span>
+          </div>
+          <div class="user-nav__user">
+            <img class="user-nav__user-photo"src="../assets/img/hannah.jpg" alt="user img">
+            <span class="user-nav__user-name">Anna</span>
+          </div>
+           <div>
+             <ion-icon class="user-nav__log-out" name="log-out-outline"></ion-icon>
+          </div>
+
+        </nav>
+      </header>
+      
+
+    </div>
+    <main class="transactions__container">
+        <div class="balance">
+            <div>
+                <p class="balance__label">Current balance</p>
+                <p class="balance__date">
+                    <span class="date">05/03/2037</span>
+                </p>
+            </div>
+            <p class="balance__value">2000€</p>
+        </div>
+        <div class="movements">
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--1">
+                        <use xlink:href="../assets/sprite.svg#icon-home3"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Insurence
+                        </div>
+                        <div class="movements__detail">Insurence company "DNK"</div>
+                    </div>
+                </div>
+                <div class="movements__value">-70€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--2">
+                        <use xlink:href="../assets/sprite.svg#icon-tab"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Pesonal Transfer
+                        </div>
+                        <div class="movements__detail">ID 21001001234</div>
+                    </div>
+                </div>
+                <div class="movements__value">-220€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--3">
+                        <use xlink:href="../assets/sprite.svg#icon-spoon-knife "></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Restaurant, Cafe, Bar
+                        </div>
+                        <div class="movements__detail">LTD Uniclo Restaurant</div>
+                    </div>
+                </div>
+                <div class="movements__value">-80€</div>
+            </div>
+             <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--4">
+                        <use xlink:href="../assets/sprite.svg#icon-briefcase"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Shopping
+                        </div>
+                        <div class="movements__detail">LTD Dressup Group</div>
+                    </div>
+                </div>
+                <div class="movements__value">-100€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--5">
+                        <use xlink:href="../assets/sprite.svg#icon-library"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Bank&insurance
+                        </div>
+                        <div class="movements__detail">Loan</div>
+                    </div>
+                </div>
+                <div class="movements__value">-375€</div>
+            </div>
+        </div>
+        <p class="transaction__date--box">
+            <span class="balance__date">04/03/2037</span>
+        </p>
+        <div class="movements">
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--1">
+                        <use xlink:href="../assets/sprite.svg#icon-home3"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Insurence
+                        </div>
+                        <div class="movements__detail">Insurence company "DNK"</div>
+                    </div>
+                </div>
+                <div class="movements__value">-70€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--2">
+                        <use xlink:href="../assets/sprite.svg#icon-tab"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Pesonal Transfer
+                        </div>
+                        <div class="movements__detail">ID 21001001234</div>
+                    </div>
+                </div>
+                <div class="movements__value">-220€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--3">
+                        <use xlink:href="../assets/sprite.svg#icon-spoon-knife "></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Restaurant, Cafe, Bar
+                        </div>
+                        <div class="movements__date">LTD Uniclo Restaurant</div>
+                    </div>
+                </div>
+                <div class="movements__value">-80€</div>
+            </div>
+             <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--4">
+                        <use xlink:href="../assets/sprite.svg#icon-briefcase"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Shopping
+                        </div>
+                        <div class="movements__detail">LTD Dressup Group</div>
+                    </div>
+                </div>
+                <div class="movements__value">-100€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--5">
+                        <use xlink:href="../assets/sprite.svg#icon-library"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Bank&insurance
+                        </div>
+                        <div class="movements__detail">Loan</div>
+                    </div>
+                </div>
+                <div class="movements__value">-375€</div>
+            </div>
+        </div>
+        <p class="transaction__date--box">
+            <span class="balance__date">03/03/2037</span>
+        </p>
+        <div class="movements">
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--2">
+                        <use xlink:href="../assets/sprite.svg#icon-tab"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Pesonal Transfer
+                        </div>
+                        <div class="movements__detail">ID 21001001234</div>
+                    </div>
+                </div>
+                <div class="movements__value">-220€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--3">
+                        <use xlink:href="../assets/sprite.svg#icon-spoon-knife "></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Restaurant, Cafe, Bar
+                        </div>
+                        <div class="movements__detail">LTD Uniclo Restaurant</div>
+                    </div>
+                </div>
+                <div class="movements__value">-80€</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__box-1">
+                    <svg class="movements__icon movements__icon--5">
+                        <use xlink:href="../assets/sprite.svg#icon-library"></use>
+                    </svg>
+                    <div class="movements__box-2">
+                        <div class="movements__type">
+                            Bank&insurance
+                        </div>
+                        <div class="movements__detail">Loan</div>
+                    </div>
+                </div>
+                <div class="movements__value">-375€</div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
