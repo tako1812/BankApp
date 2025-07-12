@@ -9,8 +9,6 @@
 --color-grey-light-3:#f0eeee;
 --color-grey-light-4:#ccc;
 
-
-
 --color-grey-dark-1: #333;
 --color-grey-dark-2: #777;
 --color-grey-dark-3: #999;
@@ -23,14 +21,7 @@
 --color-purple:#826cb0;
 --color-blue:#af8aba;
 --color-turquoise:#597c7c;
-
-
-
-
-
 }
-
-
 
 *{
   margin:0;
@@ -55,8 +46,6 @@ body{
 
   min-height:100vh;
 }
-
-
 .container{
  max-width:120rem;
  margin:auto 8rem;
@@ -67,8 +56,6 @@ body{
   align-items: center;
   height:7rem;
   background-color:var(--color-primary);;
-
-
 }
 .content{
  display:flex;
@@ -86,7 +73,6 @@ body{
   height:80rem;
   padding: 3rem;
 }
-
 .balance-expenses-currency-conatiner{
   display: grid;
   gap:2.5rem;
