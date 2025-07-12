@@ -9,14 +9,14 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>BankApp</title>
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img class="logo-img"src="assets/img/logo.png" alt="logo image">
+        <img class="user-nav__logo-img"src="assets/img/logo.png" alt="logo image">
         <nav class="user-nav">
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
@@ -119,35 +119,35 @@
                   <div class="expenses__container__pie"></div>
                   <div>
                     <h3 class="expenses__container__label">Current Expenses</h3>
-                    <div class="current-balance__container">
-                    <div class="current-balance__currency-box">
-                      <div class="current-balance__currency-1">
-                        <p class="current-balance__currency">Bills</p>
-                        <p class="current-balance__value">850$</p>
+                    <div class="current-balance__container expenses__container--flex-box">
+                      <div class="current-balance__currency-box">
+                        <div class="current-balance__currency-1">
+                          <p class="current-balance__currency">Bills</p>
+                          <p class="current-balance__value">850$</p>
+                        </div>
+                        <div class="current-balance__currency-2">
+                          <p class="current-balance__currency">Living</p>
+                          <p class="current-balance__value">500€</p>
+                        </div>
                       </div>
-                      <div class="current-balance__currency-2">
-                        <p class="current-balance__currency">Living</p>
-                        <p class="current-balance__value">500€</p>
-                      </div>
-                    </div>
-                    <div class="current-balance__currency-box">
-                      <div class="current-balance__currency-3">
-                        <p class="current-balance__currency">Entertainment</p>
-                        <p class="current-balance__value">300£</p>
-                      </div>
-                      <div class="current-balance__currency-4">
-                        <p class="current-balance__currency">Personal Care</p>
-                        <p class="current-balance__value">500₾ </p>
+                      <div class="current-balance__currency-box">
+                        <div class="current-balance__currency-3">
+                          <p class="current-balance__currency">Entertainment</p>
+                          <p class="current-balance__value">300£</p>
+                        </div>
+                        <div class="current-balance__currency-4">
+                          <p class="current-balance__currency">Personal Care</p>
+                          <p class="current-balance__value">500₾ </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              </div>
             </div>
             <div class="currency-rate">
               <div class="flex-box">
-                <div class="currency-rate__content--1">
+                <div class="currency-rate__content">
                   <div class="currency-rate__container">
                     <img src="assets/img/USA flag.png" alt="USA flag">
                     <div>
@@ -176,7 +176,7 @@
                 </div>
               </div>
               <div class="flex-box">
-                <div class="currency-rate__content--1">
+                <div class="currency-rate__content">
                   <div class="currency-rate__container">
                     <img src="assets/img/european Union flag.webp" alt="European Union flag">
                     <div>
@@ -205,7 +205,7 @@
                 </div>
               </div>
               <div class="flex-box">
-                <div class="currency-rate__content--1">
+                <div class="currency-rate__content">
                   <div class="currency-rate__container">
                     <img src="assets/img/UK flag.jpg" alt="UK flag">
                     <div>
@@ -233,7 +233,6 @@
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
 
