@@ -14,8 +14,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
+    <div class="container dark-light__container">
+      <header class="header dark-light-mode">
         <img class="user-nav__logo-img"src="assets/img/logo.png" alt="logo image">
         <nav class="user-nav">
           <div class="user-nav__icon-box">
@@ -30,6 +30,13 @@
           </div>
           <div>
              <ion-icon class="user-nav__log-out" name="log-out-outline"></ion-icon>
+          </div>
+          <div>
+            <input type="checkbox" class="dark-light__checkbox" id="dark-light__toggle">
+            <label for="dark-light__toggle" class="dark-light__button">
+              <ion-icon class="toggle-icon"name="contrast-outline"></ion-icon>
+            </label>
+            <div class="dark-light__background"> </div>
           </div>
  
         </nav>
@@ -63,81 +70,81 @@
             </li>
           </ul>
         </nav>
-        <main class="dashboard">
+        <main class="dashboard dark-light-mode">
           <div class="account-summary">
-            <div class="account-summary__box">
-              <p class="account-summary__type">Income</p>
-              <p class="account-summary__amount">$3,814.25</p>
+            <div class="account-summary__box dark-light-mode-cards">
+              <p class="account-summary__type dark-light-mode-heading">Income</p>
+              <p class="account-summary__amount dark-light-mode-text">$3,814.25</p>
             </div>
-            <div class="account-summary__box">
-              <p class="account-summary__type">Expenses</p>
-              <p class="account-summary__amount">$1,700.36</p>
+            <div class="account-summary__box dark-light-mode-cards">
+              <p class="account-summary__type dark-light-mode-heading">Expenses</p>
+              <p class="account-summary__amount dark-light-mode-text">$1,700.36</p>
             </div>
-            <div class="account-summary__box">
-              <p class="account-summary__type">Deposit</p>
-              <p class="account-summary__amount">$3,000.25</p>
+            <div class="account-summary__box dark-light-mode-cards">
+              <p class="account-summary__type dark-light-mode-heading">Deposit</p>
+              <p class="account-summary__amount dark-light-mode-text">$3,000.25</p>
             </div>
           </div>
           <div class="balance-expenses-currency-conatiner">
             <div>
-              <div class="current-balance">
-                <h3 class="current-balance__label">Current Balance</h3>
+              <div class="current-balance dark-light-mode-cards">
+                <h3 class="current-balance__label dark-light-mode-heading">Current Balance</h3>
                 <div class="current-balance__total">
-                  <div class="current-balance__container current-balance__container-total">
+                  <div class="current-balance__container current-balance__container-total dark-light-mode-totalBal">
                       <img class="current-balance__icon" src="assets/icons/dollar-sign.svg" alt="dollar icon">
                       <div>
-                        <p>Total</p>
-                        <p class="current-balance__total--value">$2,100.25</p>
+                        <p class="current-balance__total--label dark-light-mode-heading">Total</p>
+                        <p class="current-balance__total--value dark-light-mode-text">$2,100.25</p>
                       </div>
                   </div>
                   <div class="current-balance__container">
                     <div class="current-balance__currency-box">
                       <div class="current-balance__currency-1">
                         <p class="current-balance__currency">Dollar</p>
-                        <p class="current-balance__value">850$</p>
+                        <p class="current-balance__value dark-light-mode-text">850$</p>
                       </div>
                       <div class="current-balance__currency-2">
                         <p class="current-balance__currency">Euro</p>
-                        <p class="current-balance__value">500€</p>
+                        <p class="current-balance__value dark-light-mode-text">500€</p>
                       </div>
                     </div>
                     <div class="current-balance__currency-box">
                       <div class="current-balance__currency-3">
                         <p class="current-balance__currency">Pound</p>
-                        <p class="current-balance__value">300£</p>
+                        <p class="current-balance__value dark-light-mode-text">300£</p>
                       </div>
                       <div class="current-balance__currency-4">
                         <p class="current-balance__currency">Lari</p>
-                        <p class="current-balance__value">500₾ </p>
+                        <p class="current-balance__value dark-light-mode-text">500₾ </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="current-expenses">
-                <div class="expenses__container">
+                <div class="expenses__container dark-light-mode-cards">
                   <div class="expenses__container__pie"></div>
                   <div>
-                    <h3 class="expenses__container__label">Current Expenses</h3>
+                    <h3 class="expenses__container__label dark-light-mode-heading">Current Expenses</h3>
                     <div class="current-balance__container expenses__container--flex-box">
                       <div class="current-balance__currency-box">
                         <div class="current-balance__currency-1">
                           <p class="current-balance__currency">Bills</p>
-                          <p class="current-balance__value">850$</p>
+                          <p class="current-balance__value dark-light-mode-text">850$</p>
                         </div>
                         <div class="current-balance__currency-2">
                           <p class="current-balance__currency">Living</p>
-                          <p class="current-balance__value">500€</p>
+                          <p class="current-balance__value dark-light-mode-text">500€</p>
                         </div>
                       </div>
                       <div class="current-balance__currency-box">
                         <div class="current-balance__currency-3">
                           <p class="current-balance__currency">Entertainment</p>
-                          <p class="current-balance__value">300£</p>
+                          <p class="current-balance__value dark-light-mode-text">300£</p>
                         </div>
                         <div class="current-balance__currency-4">
                           <p class="current-balance__currency">Personal Care</p>
-                          <p class="current-balance__value">500₾ </p>
+                          <p class="current-balance__value dark-light-mode-text">500₾ </p>
                         </div>
                       </div>
                     </div>
@@ -145,31 +152,31 @@
                 </div>
               </div>
             </div>
-            <div class="currency-rate">
+            <div class="currency-rate dark-light-mode-cards">
               <div class="flex-box">
                 <div class="currency-rate__content">
                   <div class="currency-rate__container">
-                    <img src="assets/img/USA flag.png" alt="USA flag">
+                    <img src="assets/img/USA flag.png"alt="USA flag">
                     <div>
-                      <p class="currency-rate__label"><span class="currency-rate__country">usd</span>official rate</p>
-                      <p class="currency-rate__value">2.7174</p>
+                      <p class="currency-rate__label"><span class="currency-rate__country dark-light-mode-text-cur">usd</span>official rate</p>
+                      <p class="currency-rate__value dark-light-mode-text">2.7174</p>
                     </div>
                   </div>
                   <div class="currency-rate__details">
                     <div class="currency-rate__type">
-                      <p>special course</p>
+                      <p>special</p>
                       <p>standart</p>
                     </div>
                     <div class="currency-rate__deal__type">
                       <div class="currency-rate__values--purchase">
-                        <p class="currency-rate__deal__type--label">purchase</p>
-                        <p class="currency-rate__deal__type--value">2.7110</p>
-                        <p class="currency-rate__deal__type--value">2.6660</p>
+                        <p class="currency-rate__deal__type--label dark-light-mode-text">purchase</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7110</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.6660</p>
                       </div>
                       <div class="currency-rate__values--sell">
-                        <p class="currency-rate__deal__type--label">sell</p>
-                        <p class="currency-rate__deal__type--value">2.7160</p>
-                        <p class="currency-rate__deal__type--value">2.7660</p>
+                        <p class="currency-rate__deal__type--label dark-light-mode-text">sell</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7160</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7660</p>
                       </div>
                     </div>
                   </div>
@@ -180,25 +187,25 @@
                   <div class="currency-rate__container">
                     <img src="assets/img/european Union flag.webp" alt="European Union flag">
                     <div>
-                      <p class="currency-rate__label"><span class="currency-rate__country">EUR</span>official rate</p>
-                      <p class="currency-rate__value">2.9874</p>
+                      <p class="currency-rate__label"><span class="currency-rate__country dark-light-mode-text-cur">EUR</span>official rate</p>
+                      <p class="currency-rate__value dark-light-mode-text">2.9874</p>
                     </div>
                   </div>
                   <div class="currency-rate__details">
                     <div class="currency-rate__type">
-                      <p>special course</p>
+                      <p>special</p>
                       <p>standart</p>
                     </div>
                     <div class="currency-rate__deal__type">
                       <div class="currency-rate__values--purchase">
-                        <p class="currency-rate__deal__type--label">purchase</p>
-                        <p class="currency-rate__deal__type--value">2.7110</p>
-                        <p class="currency-rate__deal__type--value">2.6660</p>
+                        <p class="currency-rate__deal__type--label dark-light-mode-text">purchase</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7110</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.6660</p>
                       </div>
                       <div class="currency-rate__values--sell">
-                        <p class="currency-rate__deal__type--label">sell</p>
-                        <p class="currency-rate__deal__type--value">2.7160</p>
-                        <p class="currency-rate__deal__type--value">2.7660</p>
+                        <p class="currency-rate__deal__type--label dark-light-mode-text">sell</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7160</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7660</p>
                       </div>
                     </div>
                   </div>
@@ -209,25 +216,25 @@
                   <div class="currency-rate__container">
                     <img src="assets/img/UK flag.jpg" alt="UK flag">
                     <div>
-                      <p class="currency-rate__label"><span class="currency-rate__country">GBP</span>official rate</p>
-                      <p class="currency-rate__value">3.7174</p>
+                      <p class="currency-rate__label"><span class="currency-rate__country dark-light-mode-text-cur">GBP</span>official rate</p>
+                      <p class="currency-rate__value dark-light-mode-text">3.7174</p>
                     </div>
                   </div>
                   <div class="currency-rate__details">
                     <div class="currency-rate__type">
-                      <p>special course</p>
+                      <p>special</p>
                       <p>standart</p>
                     </div>
                     <div class="currency-rate__deal__type">
                       <div class="currency-rate__values--purchase">
-                        <p class="currency-rate__deal__type--label">purchase</p>
-                        <p class="currency-rate__deal__type--value">2.7110</p>
-                        <p class="currency-rate__deal__type--value">2.6660</p>
+                        <p class="currency-rate__deal__type--label dark-light-mode-text">purchase</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7110</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.6660</p>
                       </div>
                       <div class="currency-rate__values--sell">
-                        <p class="currency-rate__deal__type--label">sell</p>
-                        <p class="currency-rate__deal__type--value">2.7160</p>
-                        <p class="currency-rate__deal__type--value">2.7660</p>
+                        <p class="currency-rate__deal__type--label dark-light-mode-text">sell</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7160</p>
+                        <p class="currency-rate__deal__type--value dark-light-mode-text">2.7660</p>
                       </div>
                     </div>
                   </div>
@@ -251,4 +258,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
+
+
+
+
+
+
 

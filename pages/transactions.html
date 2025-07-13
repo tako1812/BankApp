@@ -16,7 +16,7 @@
 
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header dark-light-mode">
         <a href="../index.html"><img class="user-nav__logo-img"src="../assets/img/logo.png" alt="logo image"></a>
         <nav class="user-nav">
           <div class="user-nav__icon-box">
@@ -31,6 +31,13 @@
           </div>
            <div>
              <ion-icon class="user-nav__log-out" name="log-out-outline"></ion-icon>
+          </div>
+          <div>
+            <input type="checkbox" class="dark-light__checkbox" id="dark-light__toggle">
+            <label for="dark-light__toggle" class="dark-light__button">
+              <ion-icon class="toggle-icon"name="contrast-outline"></ion-icon>
+            </label>
+            <div class="dark-light__background"> </div>
           </div>
 
         </nav>
@@ -49,21 +56,21 @@
             <p class="balance__value">2000€</p>
         </div>
         <div class="movements">
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--1">
                         <use xlink:href="../assets/sprite.svg#icon-home3"></use>
                     </svg>
                     <div class="movements__box-2">
-                        <div class="movements__type">
+                        <p class="movements__type">
                             Insurence
-                        </div>
+                        </p>
                         <div class="movements__detail">Insurence company "DNK"</div>
                     </div>
                 </div>
-                <div class="movements__value">-70€</div>
+                <p class="movements__value  dark-light-mode-heading">-70€</p>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--2">
                         <use xlink:href="../assets/sprite.svg#icon-tab"></use>
@@ -75,9 +82,9 @@
                         <div class="movements__detail">ID 21001001234</div>
                     </div>
                 </div>
-                <div class="movements__value">-220€</div>
+                <div class="movements__value  dark-light-mode-heading">-220€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--3">
                         <use xlink:href="../assets/sprite.svg#icon-spoon-knife "></use>
@@ -89,9 +96,9 @@
                         <div class="movements__detail">LTD Uniclo Restaurant</div>
                     </div>
                 </div>
-                <div class="movements__value">-80€</div>
+                <div class="movements__value  dark-light-mode-heading">-80€</div>
             </div>
-             <div class="movements__row">
+             <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--4">
                         <use xlink:href="../assets/sprite.svg#icon-briefcase"></use>
@@ -103,9 +110,9 @@
                         <div class="movements__detail">LTD Dressup Group</div>
                     </div>
                 </div>
-                <div class="movements__value">-100€</div>
+                <div class="movements__value dark-light-mode-heading">-100€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--5">
                         <use xlink:href="../assets/sprite.svg#icon-library"></use>
@@ -117,14 +124,14 @@
                         <div class="movements__detail">Loan</div>
                     </div>
                 </div>
-                <div class="movements__value">-375€</div>
+                <div class="movements__value dark-light-mode-heading ">-375€</div>
             </div>
         </div>
         <p class="transaction__date--box">
             <span class="balance__date">04/03/2037</span>
         </p>
         <div class="movements">
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--1">
                         <use xlink:href="../assets/sprite.svg#icon-home3"></use>
@@ -136,9 +143,9 @@
                         <div class="movements__detail">Insurence company "DNK"</div>
                     </div>
                 </div>
-                <div class="movements__value">-70€</div>
+                <div class="movements__value dark-light-mode-heading">-70€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--2">
                         <use xlink:href="../assets/sprite.svg#icon-tab"></use>
@@ -150,9 +157,9 @@
                         <div class="movements__detail">ID 21001001234</div>
                     </div>
                 </div>
-                <div class="movements__value">-220€</div>
+                <div class="movements__value dark-light-mode-heading">-220€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--3">
                         <use xlink:href="../assets/sprite.svg#icon-spoon-knife "></use>
@@ -164,9 +171,9 @@
                         <div class="movements__date">LTD Uniclo Restaurant</div>
                     </div>
                 </div>
-                <div class="movements__value">-80€</div>
+                <div class="movements__value dark-light-mode-heading">-80€</div>
             </div>
-             <div class="movements__row">
+             <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--4">
                         <use xlink:href="../assets/sprite.svg#icon-briefcase"></use>
@@ -178,9 +185,9 @@
                         <div class="movements__detail">LTD Dressup Group</div>
                     </div>
                 </div>
-                <div class="movements__value">-100€</div>
+                <div class="movements__value dark-light-mode-heading ">-100€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--5">
                         <use xlink:href="../assets/sprite.svg#icon-library"></use>
@@ -192,14 +199,14 @@
                         <div class="movements__detail">Loan</div>
                     </div>
                 </div>
-                <div class="movements__value">-375€</div>
+                <div class="movements__value dark-light-mode-heading">-375€</div>
             </div>
         </div>
         <p class="transaction__date--box">
             <span class="balance__date">03/03/2037</span>
         </p>
         <div class="movements">
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--2">
                         <use xlink:href="../assets/sprite.svg#icon-tab"></use>
@@ -211,9 +218,9 @@
                         <div class="movements__detail">ID 21001001234</div>
                     </div>
                 </div>
-                <div class="movements__value">-220€</div>
+                <div class="movements__value dark-light-mode-heading">-220€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--3">
                         <use xlink:href="../assets/sprite.svg#icon-spoon-knife "></use>
@@ -225,9 +232,9 @@
                         <div class="movements__detail">LTD Uniclo Restaurant</div>
                     </div>
                 </div>
-                <div class="movements__value">-80€</div>
+                <div class="movements__value dark-light-mode-heading">-80€</div>
             </div>
-            <div class="movements__row">
+            <div class="movements__row dark-light-mode-movements">
                 <div class="movements__box-1">
                     <svg class="movements__icon movements__icon--5">
                         <use xlink:href="../assets/sprite.svg#icon-library"></use>
@@ -239,7 +246,7 @@
                         <div class="movements__detail">Loan</div>
                     </div>
                 </div>
-                <div class="movements__value">-375€</div>
+                <div class="movements__value dark-light-mode-heading">-375€</div>
             </div>
         </div>
     </main>

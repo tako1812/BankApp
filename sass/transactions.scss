@@ -41,13 +41,13 @@
       font-size: 1.1rem;
       font-weight: 500;
       border-radius: 10rem;
-      margin-right: 2rem
+      margin-right: 2rem;
     }
     
     &__value{
       font-size: 1.7rem;
-     
       margin-left: auto;
+      color:var(--color-grey-dark-1);
     }
     &__icon{
       background-color:var(--color-white);
